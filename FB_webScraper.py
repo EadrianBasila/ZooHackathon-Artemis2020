@@ -15,3 +15,7 @@ driver.maximize_window()
 #login account
 email = driver.find_element_by_name('email').send_keys('artemis11620@gmail.com')
 password = driver.find_element_by_name('pass').send_keys('@rtemiS1120', Keys.RETURN)
+
+# find search input and search for term
+search_input = driver.find_element_by_xpath('//input[@dir="ltr"]')
+search_input.send_keys('Pangolin for sale', Keys.RETURN)
